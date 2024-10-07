@@ -12,7 +12,6 @@ function Hero() {
       className="bg-[#1E201E] h-screen flex items-start justify-center"
     >
       <div className="flex flex-col items-center pt-10">
-        {" "}
         <img
           src={Avatar}
           alt="avatar image"
@@ -26,7 +25,7 @@ function Hero() {
         </h2>
         <span className="flex space-x-8 md:space-x-16 mt-5 hover:scale-110 transition-transform duration-300 ease-in-out">
           <a
-            href="https://github.com/"
+            href={import.meta.env.VITE_GITHUB} // Using import.meta.env in Vite
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -37,7 +36,7 @@ function Hero() {
             />
           </a>
           <a
-            href="https://linkedin.com/"
+            href={import.meta.env.VITE_LINKEDIN} // Using import.meta.env for LinkedIn
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -48,7 +47,7 @@ function Hero() {
             />
           </a>
           <a
-            href="https://twitter.com/"
+            href={import.meta.env.VITE_TWITTER} // Using import.meta.env for Twitter
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -59,7 +58,7 @@ function Hero() {
             />
           </a>
           <a
-            href="https://twitter.com/"
+            href={import.meta.env.VITE_UPWORK} // Using import.meta.env for Upwork
             target="_blank"
             rel="noopener noreferrer"
           >
