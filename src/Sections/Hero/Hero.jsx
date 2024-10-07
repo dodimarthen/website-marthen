@@ -69,7 +69,7 @@ function Hero() {
             />
           </a>
         </span>
-        <p className="text-[#F6F5F2] mt-5 subpixel-antialiased font-medium tracking-wide leading-loose text-lg sm:text-base md:text-sm">
+        <p className="text-[#F6F5F2] mt-5 text-center subpixel-antialiased font-medium tracking-wide leading-loose text-lg sm:text-base md:text-sm">
           New to development, but committed to crafting impactful solutions and
           continuously self-learning to grow.
         </p>

@@ -5,6 +5,7 @@ import mysql from "../../assets/mysql.png";
 import python from "../../assets/python.png";
 import puppeteer from "../../assets/pptr.png";
 import react from "../../assets/react.svg";
+import cypress from "../../assets/cypress.png";
 
 const cardsData = [
   { title: "JavaScript", icon: js, bgcolor: "#213555" },
@@ -12,7 +13,7 @@ const cardsData = [
   { title: "MySQL", icon: mysql, bgcolor: "#27374D" },
   { title: "Puppeteer", icon: puppeteer, bgcolor: "#1630205" },
   { title: "React", icon: react, bgcolor: "#FC6736" },
-  { title: "React", icon: js, bgcolor: "#525CEB" },
+  { title: "Cypress", icon: cypress, bgcolor: "#006BFF" },
 ];
 
 function Skills() {
@@ -21,7 +22,7 @@ function Skills() {
       id="skills"
       className="bg-[#1E201E] h-screen flex items-start justify-center"
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 p-8">
         {cardsData.map((card, index) => (
           <Card
             key={index}
