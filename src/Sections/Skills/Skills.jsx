@@ -8,9 +8,9 @@ import react from "../../assets/react.svg";
 import cypress from "../../assets/cypress.png";
 
 const cardsData = [
-  { title: "JavaScript", icon: js, bgcolor: "#213555" },
+  { title: "JavaScript", icon: js, bgcolor: "#8EC3B0" },
   { title: "Python", icon: python, bgcolor: "#26577C" },
-  { title: "MySQL", icon: mysql, bgcolor: "#27374D" },
+  { title: "MySQL", icon: mysql, bgcolor: "#9ED5C5" },
   { title: "Puppeteer", icon: puppeteer, bgcolor: "#1630205" },
   { title: "React", icon: react, bgcolor: "#FC6736" },
   { title: "Cypress", icon: cypress, bgcolor: "#006BFF" },
@@ -22,7 +22,7 @@ function Skills() {
       id="skills"
       className="bg-[#1E201E] h-screen flex items-start justify-center"
     >
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 p-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
         {cardsData.map((card, index) => (
           <Card
             key={index}
